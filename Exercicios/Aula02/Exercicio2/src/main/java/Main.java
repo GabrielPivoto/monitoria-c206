@@ -20,7 +20,7 @@ public class Main {
         } else if (imc <= 24.9) {
             System.out.println("Peso ideal (Parabéns)");
         } else if (imc <= 29.9) {
-            System.out.println("Levemente assima do peso");
+            System.out.println("Levemente acima do peso");
         } else if (imc <= 34.9) {
             System.out.println("Obesidade grau I");
         } else if (imc <= 39.9) {

@@ -18,7 +18,7 @@ public class Main {
         if (imc <= 18.5) {
             System.out.println("Abaixo do peso");
         } else if (imc <= 24.9) {
-            System.out.println("Peso ideal (Parabéns)");
+            System.out.println("Peso ideal (Parabéns!)");
         } else if (imc <= 29.9) {
             System.out.println("Levemente acima do peso");
         } else if (imc <= 34.9) {

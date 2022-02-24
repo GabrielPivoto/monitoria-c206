@@ -128,7 +128,7 @@ public class Main {
 
          */
 
-        String[] numeros = {"Teste","Oi"};
+        double[] numeros = {1.2,4.5,0.56,.99};
         /*
         for (int i = 0; i < numeros.length; i++) {
             System.out.println(numeros[i]);
@@ -136,7 +136,7 @@ public class Main {
 
          */
 
-        for(String numero:numeros){
+        for(double numero:numeros){
             System.out.println(numero);
         }
 

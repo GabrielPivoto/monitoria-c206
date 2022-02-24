@@ -25,16 +25,27 @@ public class Main {
 
          */
 
+        //Composicao - Nave ja eh criado com a Arma
+        /*
         Nave n1 = new Nave();
+        n1.nome = "Razor Crest";
+        n1.velocidade = 200;
+        n1.velocidadeDaLuz = true;
         n1.arma.tipo = "Canhao";
         n1.arma.poder = 400;
+         */
 
+        //Agragacao - Arma criada separadamente e adicionada a Nave depois
+        Nave n2 = new Nave();
+        n2.nome = "Milenium Falcon";
+        n2.velocidade = 400;
+        n2.velocidadeDaLuz = true;
         Arma arma = new Arma();
-        //arma.tipo = "Canhão";
-        //arma.poder = 500;
-        n1.addArma(arma);
+        arma.tipo = "Canhão";
+        arma.poder = 500;
+        n2.addArma(arma);
 
-        n1.mostraInfo();
+        n2.mostraInfo();
 
 
 

@@ -4,7 +4,7 @@ public class Nave {
     int velocidade;
     boolean velocidadeDaLuz;
     Arma arma = new Arma(); // Composicao
-    //Arma arma;
+    //Arma arma; // Agregacao
 
     public Nave(String nome, int velocidade, boolean velocidadeDaLuz) {
         this.nome = nome;
@@ -30,6 +30,6 @@ public class Nave {
 
     void addArma(Arma arma){
         this.arma = arma;
-    }
+    }//Método usado na agregacao
 
 }

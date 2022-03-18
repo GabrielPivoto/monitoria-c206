@@ -11,7 +11,7 @@ public class Main {
 
         System.out.println("Quantidade de robos criados: " + Robo.getCont());
 
-        Robo.mostraMensagem();
+        Robo.mostraMensagem(); // Acessando um método estático
 
         r1.mostraInfo();
         r2.mostraInfo();

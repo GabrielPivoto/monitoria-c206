@@ -9,9 +9,11 @@ public class Main {
         Robo r3 = new Robo("BB8");
         Robo.setCont(5);
 
+        double n = Math.pow(5,3);
+
         System.out.println("Quantidade de robos criados: " + Robo.getCont());
 
-        Robo.mostraMensagem();
+        Robo.mostraMensagem(); // Método estático
 
         r1.mostraInfo();
         r2.mostraInfo();

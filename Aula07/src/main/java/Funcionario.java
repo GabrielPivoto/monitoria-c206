@@ -1,13 +1,15 @@
-public class Funcionario {
+public abstract class Funcionario {
 
     private String nome;
     private int idade;
     private double salario;
+    public static int cont;
 
     public Funcionario(String nome, int idade, double salario) {
         this.nome = nome;
         this.idade = idade;
         this.salario = salario;
+        cont++;
     }
 
     public void mostraInfo(){
@@ -20,9 +22,8 @@ public class Funcionario {
         return this.salario;
     }
 
-    public void fazAlgo(){
-        System.out.println(this.nome + " está fazendo algo");
-    }
+    public abstract void fazAlgo();
+    public abstract void tirarFerias(String mes);
 
     public String getNome() {
         return nome;

@@ -7,10 +7,12 @@ public class Main {
         Professor p = new Professor("Chris",27,15000,"POO");
         Engenheiro e = new Engenheiro("Tonho",46,5600,"Software");
         Arquiteto a = new Arquiteto("Fabiola",34,4500);
+        Funcionario func;
 
         funcionarios[0] = e;
         funcionarios[1] = p;
         funcionarios[2] = a;
+
         Professor prof;
 
         for (int i = 0; i < funcionarios.length; i++) {
@@ -21,6 +23,8 @@ public class Main {
                     prof.mostraInfo();
                     prof.fazAlgo();
                     prof.corrigeProvas();
+                    prof.tirarFerias("dezembro");
+                    prof.fazAtividade();
                     System.out.println("");
                 }else if(funcionarios[i] instanceof Engenheiro){
                     System.out.println("Esta posição tem um Engenheiro");
@@ -28,6 +32,8 @@ public class Main {
                     eng.mostraInfo();
                     eng.salarioAnual();
                     eng.fazAlgo();
+                    eng.gerenciar();
+                    eng.finalizaProjeto();
                     System.out.println("");
                 }else{
                     System.out.println("Esta posição tem um Arquiteto");
@@ -38,6 +44,7 @@ public class Main {
             }
         }
 
+        System.out.println("Quantidade de funcionários: " + Funcionario.cont);
 
 
 

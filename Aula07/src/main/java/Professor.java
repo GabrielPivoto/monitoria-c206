@@ -1,4 +1,4 @@
-public class Professor extends Funcionario{
+public class Professor extends Funcionario implements Atividade{
 
     public String materia;
 
@@ -25,5 +25,15 @@ public class Professor extends Funcionario{
     @Override
     public void fazAlgo() {
         System.out.println(this.getNome() + " está dando aula de " + this.materia);
+    }
+
+    @Override
+    public void tirarFerias(String mes) {
+        System.out.println(this.getNome() + " vai tirar férias nas Maldivas em " + mes);
+    }
+
+    @Override
+    public void fazAtividade() {
+        System.out.println(this.getNome() + " faz atividade física 3 vezes por semana");
     }
 }
